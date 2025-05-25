@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-gray-500 font-nunito bg-gray-100">
+    <div class="grid md:grid-cols-3">
+      <!--Content Wrapper -->
+      <div class="md:col-span-1">
+        <!-- Navbar Start -->
+        <nav>
+          <div>
+            <h1
+              class="font-bold uppercase p-4 border-b border-gray-100 text-ankit"
+            >
+              <a href="/">Food Ninja</a>
+            </h1>
+          </div>
+          <ul>
+            <li class="text-gray-700 font-bold">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+      <main class="px-16 py-6 md:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a href="#" class=" btn text-primary">Log in</a>
+          <a href="#" class="btn text-primary ml-2">Sign up</a>
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Restaurant</h3>
+        </header>
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10 ">
+            <!-- Cards Placed Here-->
+            <!-- 1st -->
+            <div class="card">
+              <img
+                src="./img/4Coffee.jpg"
+                alt="Beans"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500 text-sm">Recipe By Ankit</span>
+              </div>
+              <div class="badge">
+                <span>25 Min</span>
+              </div>
+            </div>
+            <!-- 2nd -->
+            <div class="bg-white rounded overflow-hidden shadow-md relative">
+              <img
+                src="./img/2Chicken.jpg"
+                alt="Chicken"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+
+              <div class="m-4">
+                <span class="font-bold">Tanduri Chicken</span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe By Muslim</span
+                >
+              </div>
+              <div
+                class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2 shadow"
+              >
+                <span>40 Min</span>
+              </div>
+            </div>
+
+            <!-- 3rd -->
+            <div class="bg-white rounded overflow-hidden shadow-md relative">
+              <img
+                src="./img/3Mushrooms.jpg"
+                alt="mushrrom"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+
+              <div class="m-4">
+                <span class="font-bold">Creamy Mushroom</span>
+                <span class="block text-gray-500 text-sm">Recipe By Rahul</span>
+              </div>
+              <div
+                class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2 shadow"
+              >
+                <span>35 Min</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most Recipes
+          </h4>
+          <div class="mt-8">
+            <!-- Cards Placed Here-->
+            <div>
+              <img src="" alt="" />
+              <div>
+                <span>Monos</span>
+                <span>Recipe By Chief</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class=" btn bg-secondary-100 text-secondary-200">Load More</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
